@@ -1,0 +1,9 @@
+version: "3.7"
+
+services:
+  postgres:
+    image: postgres:11.2-alpine
+    volumes:
+      - ./docker-data:/var/lib/postgresql/data
+    ports:
+      - "5433:5432"
